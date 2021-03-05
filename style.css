@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6ba4cf; 
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.header {
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  text-align: left;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+  /*text-shadow:*/
+        /*-1px -1px 0px #555,*/
+         /*0px -1px 0px #555,*/
+         /*1px -1px 0px #555,*/
+        /*-1px  0px 0px #555,*/
+         /*1px  0px 0px #555,*/
+        /*-1px  1px 0px #555,*/
+         /*0px  1px 0px #555,*/
+         /*1px  1px 0px #555;*/
+  color: #000000;
+  background-image: url('./images/graph.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 372px;
+  /*padding-top: 140px;*/
+}
+
+.header > h1 {
+  margin-left: 30px;
+}
+
+
+  
+
+.tabs {
+  list-style: none;
+  background-color: #FFA34D;
+}
+
+.tab-link {
+  display: inline-block;
+  width: 192px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  padding: 10px 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tab-link:hover {
+  background-color: #555;
+  color: #EDBC41;
+}
+
+.tab-link.active {
+  background-color: #D4F8E8;
+  color: #000000;
+}
+
+.main {
+  overflow: auto;
+  background-color: #cadded;
+  margin: 5px 0;
+}
+
+
+.pub {
+  overflow: auto;
+}
+
+.pub-img {
+  float: left;
+}
+
+.pub-img > img {
+  display: block;
+  width: 450px;
+  margin: 10px;
+}
+
+.pub-text {
+  float: right;
+  width: 460px;
+}
+
+.pub-text > h2 {
+  margin: 20px;
+  margin-top: 30px;
+  font-size: 1em;
+}
+
+.pub-text > h2 > a {
+  color: #000;
+}
+
+.pub-text > h2 > a:hover {
+  color: #555;
+}
+
+.pub-text > p {
+  margin: 20px;
+  font-size: 0.9em;
+}
+
+.pub-text > p > a {
+  color: #000;
+}
+
+.pub-text > p > a:hover {
+  color: #666;
+}
+
+.pub-divide {
+  border: 2.5px solid #D4EBF2;
+}
+
+.text {
+  float: left;
+  width: 480px;
+}
+
+.description {
+  text-align: left;
+  font-size: 1.1em;
+  margin: 50px;
+}
+
+.img-container {
+  float: right;
+  width: 480px;
+}
+
+.img-container > img {
+  display: block;
+  margin: 20px auto;
+  width: 440px;
+}
+
+.contact {
+  margin: 10px 0;
+}
+
+.footer {
+  height: 40px;
+  background-color: #89CFF0;
+}
+
+.fab {
+  color: #555;
+  margin: 5px 10px;
+}
+
+.footer > p {
+  float: right;
+  display: inline-block;
+  margin: 5px 10px;
+  color: #555;
+  font-size: 20px;
+}
