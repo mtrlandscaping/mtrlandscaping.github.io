@@ -20,16 +20,18 @@
       --><a class=""active tab-link"" href="#">Contact</a>
     </ul>
     <div class="main">
-      <div id="contact">
-        <h2>Make a free consult!</h2>
-        <div id="contact-form">
-                <form action="https://formspree.io/f/mleoqbrn" method="POST">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Type your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mleoqbrn" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="Write your name" required="">
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="Provide your email" required="">
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" placeholder="Write your request" required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
     </div>
     </div>
     <div class="footer">
