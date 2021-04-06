@@ -170,8 +170,4 @@ body {
 
 .footer-lef > {
   float: left;
-  display: inline-block;
-  margin: 5px 10px;
-  color: #555;
-  font-size: 20px;
 }
