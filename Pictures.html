@@ -11,27 +11,104 @@
   <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
   
   <style>
-      div.gallery {
-        margin: 5px;
-        border: 1px solid #ccc;
-        float: left;
-        width: 250px;
+    body {
+       font-family: Arial;
+       margin: 0;
+    }
+
+    * {
+         box-sizing: border-box;
       }
 
-      div.gallery:hover {
-        border: 1px solid #777;
+     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     /* Position the image container (needed to position the left and right arrows) */
+      .container {
+         position: relative;
       }
 
-      div.gallery img {
-        width: 100%;
-        height: auto;
-      }
-
-      div.desc {
-        padding: 15px;
-        text-align: center;
+      /* Hide the images by default */
+      .mySlides {
+          display: none;
         }
-  </style>
+
+      /* Add a pointer when hovering over the thumbnail images */
+      .cursor {
+          cursor: pointer;
+         }
+
+      /* Next & previous buttons */
+      .prev,
+      .next {
+          cursor: pointer;
+          position: absolute;
+          top: 40%;
+          width: auto;
+          padding: 16px;
+          margin-top: -50px;
+          color: white;
+          font-weight: bold;
+          font-size: 20px;
+          border-radius: 0 3px 3px 0;
+          user-select: none;
+          -webkit-user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+          }
+
+        /* Container for image text */
+        .caption-container {
+            text-align: center;
+            background-color: #222;
+            padding: 2px 16px;
+            color: white;
+          }
+
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+
+          /* Six columns side by side */
+          .column {
+              float: left;
+              width: 16.66%;
+          }
+
+          /* Add a transparency effect for thumnbail images */
+          .demo {
+             opacity: 0.6;
+              }
+
+          .active,
+          .demo:hover {
+             opacity: 1;
+            }
+    </style>
   
   
 </head>
@@ -50,62 +127,93 @@
     </ul>
     <div class="main">
       <br>
-        <p style="text-align:center;"> Here is some of the work we have done. Click on each image to zoom in. </p> 
+        <p style="text-align:center;"> Here is some of the work we have done. </p> 
       
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/3.jpg">
-         <img src="/Pictures/3.jpg" alt="Front" width="600" height="400">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/6.jpg">
-         <img src="/Pictures/6.jpg" alt="Patio" width="600" height="400">
-         </a>
-      </div>
-      
-       <div class="gallery">
-         <a target="_blank" href="/Pictures/12.jpg">
-         <img src="/Pictures/12.jpg" alt="Staircase" width="600" height="400">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/15.jpg">
-         <img src="/Pictures/15.jpg" alt="FrontWalk" width="600" height="400">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/5.jpg">
-         <img src="/Pictures/5.jpg" alt="FrontWalk2" width="600" height="400">
-         </a>
-      </div>
-      
-      
-       <div class="gallery">
-         <a target="_blank" href="/Pictures/10.jpg">
-         <img src="/Pictures/10.jpg" alt="Patio" width="600" height="400">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/1.jpg">
-         <img src="/Pictures/1.jpg" alt="Stone Entrance" width="600" height="600">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/2.jpg">
-         <img src="/Pictures/2.jpg" alt="Deck" width="600" height="600">
-         </a>
-      </div>
-      
-      <div class="gallery">
-         <a target="_blank" href="/Pictures/20.jpg">
-         <img src="/Pictures/20.jpg" alt="Grass" width="600" height="600">
-         </a>
-      </div>
+      <div class="container">
+          <div class="mySlides">
+            <div class="numbertext">1 / 9</div>
+            <img src="/Pictures/3.jpg"  style="width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 9</div>
+            <img src="/Pictures/6.jpg"  style="width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 9</div>
+            <img src="/Pictures/12.jpg" style="width:50%">
+          </div>
+    
+          <div class="mySlides">
+            <div class="numbertext">4 / 9</div>
+            <img src="/Pictures/15.jpg" style="width:50%">
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 9</div>
+            <img src="/Pictures/5.jpg" style="width:50%">
+          </div>
+    
+          <div class="mySlides">
+            <div class="numbertext">6 / 9</div>
+            <img src="/Pictures/10.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">7 / 9</div>
+            <img src="/Pictures/1.jpg" style="width:100%">
+          </div>
+           
+          <div class="mySlides">
+            <div class="numbertext">8 / 9</div>
+            <img src="/Pictures/2.jpg" style="width:100%">
+          </div>
+        
+          <div class="mySlides">
+            <div class="numbertext">9 / 9</div>
+            <img src="/Pictures/20.jpg" style="width:100%">
+          </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/3.jpg" style="width:50%" onclick="currentSlide(1)" alt="Front">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/6.jpg" style="width:50%" onclick="currentSlide(2)" alt="Patio">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/12.jpg" style="width:50%" onclick="currentSlide(3)" alt="Staircase">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/15.jpg" style="width:50%" onclick="currentSlide(4)" alt="FrontWalk">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/5.jpg" style="width:50%" onclick="currentSlide(5)" alt="FrontWalk2">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/10.jpg" style="width:100%" onclick="currentSlide(6)" alt="Patio">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/1.jpg" style="width:100%" onclick="currentSlide(6)" alt="Stone Entrance">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Deck">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="/Pictures/20.jpg" style="width:100%" onclick="currentSlide(6)" alt="Grass">
+    </div>                                                                                                                
+                                                                                                                    
+  </div>
+</div>
+     
     </div>
 
     
