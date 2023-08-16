@@ -37,6 +37,11 @@ body {
 
 .header > h1 {
   margin-left: 30px;
+  text-shadow:
+		-1px -1px 0 #FFFFFF,
+		1px -1px 0 #FFFFFF,
+		-1px 1px 0 #FFFFFF,
+		1px 1px 0 #FFFFFF;
 }
 
 
