@@ -170,6 +170,5 @@ body {
 
 .form { 
   display: block;
-  <!--margin-top: 0em; -->
-  <!--margin-left: 10em;-->
+  margin: 50px;
 }
