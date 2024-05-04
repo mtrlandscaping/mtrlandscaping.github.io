@@ -142,13 +142,13 @@ body {
 
 .img-container {
   float: right;
-  width: 540px;
+  width: 500px;
 }
 
 .img-container > img {
   display: block;
   margin: 20px auto;
-  width: 540px;
+  width: 500px;
   <! -- width: 440px;  -->
 }
 
