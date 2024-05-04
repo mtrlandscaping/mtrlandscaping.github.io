@@ -131,7 +131,8 @@ body {
 
 .text {
   float: left;
-  width: 480px;
+  width: 400px;
+  <! -- width: 480px;  -->
 }
 
 .description {
