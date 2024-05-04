@@ -148,7 +148,8 @@ body {
 .img-container > img {
   display: block;
   margin: 20px auto;
-  width: 440px;
+  width: 600px;
+  <! -- width: 440px;  -->
 }
 
 .contact {
